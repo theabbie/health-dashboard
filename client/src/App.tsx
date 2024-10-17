@@ -79,7 +79,7 @@ const columns: ColumnDef<Patient>[] = [
 ];
 
 export default function App() {
-  const { data, loading, error, refetch } = useAPI("https://opulent-trout-5g7q4qx4x74hppqx-3000.app.github.dev");
+  const { data, loading, error, refetch } = useAPI("https://health-dashboard-oijm.onrender.com");
   const [modalOpen, setModalOpen] = React.useState(false);
   const [selectedPatient, setSelectedPatient] = React.useState<Patient | null>(null);
   const [search, setSearch] = React.useState("");
