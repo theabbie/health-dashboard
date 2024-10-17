@@ -12,7 +12,7 @@ const PatientSchema: Schema = new Schema({
   age: { type: Number, required: true },
   medicalHistory: { type: [String], required: true },
   treatmentPlan: { type: String, required: true },
-}, { timestamps: true }); // Automatically adds createdAt and updatedAt fields
+}, { timestamps: true });
 
 const Patient = mongoose.model<IPatient>('Patient', PatientSchema);
 
